@@ -5,7 +5,7 @@ sg.theme('Material1')
 layout = [[sg.Text('Tradutor')],
           [sg.Text('Texto: '), sg.InputText()],
           [sg.Button('Traduzir', key='entrada'), sg.Button('Cancel')],
-          [sg.Combo(['Portugues', 'Espanhol', 'Ingles', 'Frances', 'Italiano'], enable_events=True, key='combo')],
+          [sg.Text('Traduzir para: '),sg.Combo(['Portugues', 'Espanhol', 'Ingles', 'Frances', 'Italiano'], enable_events=True, key='combo')],
           [sg.Output(size=(40, 2))]]
 
 window = sg.Window('Tradutor do ze', layout)
