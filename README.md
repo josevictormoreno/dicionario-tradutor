@@ -1,2 +1,2 @@
-# dicionario-tradutor
-Dicionario e tradutor feito com python
+# Dicionario e Tradutor
+Dicionario e tradutor feito com python, utilizando a biblioteca PyDictionary
