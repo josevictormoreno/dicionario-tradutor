@@ -2,10 +2,11 @@ import PySimpleGUI as sg
 from tradutor import tradutor
 
 sg.theme('Material1')
-layout = [[sg.Text('Tradutor')],
+layout = [
           [sg.Text('Texto: '), sg.InputText()],
           [sg.Button('Traduzir', key='entrada'), sg.Button('Cancel')],
-          [sg.Text('Traduzir para: '),sg.Combo(['Portugues', 'Espanhol', 'Ingles', 'Frances', 'Italiano'], enable_events=True, key='combo')],
+          [sg.Text('Traduzir para: '),sg.Combo(['Portugues', 'Espanhol', 
+          'Ingles', 'Frances', 'Italiano', 'Japones', 'Arabe', 'Russo', 'Indiano'], default_value='Portugues',enable_events=True, key='combo')],
           [sg.Output(size=(40, 2))]]
 
 window = sg.Window('Tradutor do ze', layout)
